@@ -1,6 +1,8 @@
 
 # Over The Edge Radio
 
+((very much a work in progress))
+
 An endless stream of Over The Edge episodes, from
 the [archive.org collection](https://archive.org/details/ote?tab=collection).
 
@@ -22,4 +24,7 @@ I guess.
 $ virtualenv env
 $ source env/bin/activate
 $ pip install internetarchive
+$ python3 fetch_meta.py
 ```
+
+It takes a while to download all the metadata.
