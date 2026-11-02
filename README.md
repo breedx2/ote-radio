@@ -28,3 +28,14 @@ $ python3 fetch_meta.py
 ```
 
 It takes a while to download all the metadata.
+
+# Build the container images
+
+There are two containers:
+
+* icecast - responsible for streaming to clients
+* ezstream - responsible for sending audio to icecast
+
+The `ezstream` container has a custom playlist script that
+will download the next item before it is needed, and then 
+delete old stuff more than 8 hours old.
